@@ -5,6 +5,11 @@ menu "MSM8974 panel drivers generated with linux-mdss-dsi-panel-driver-generator
 config DRM_PANEL_MSM8974_GENERATED
 	tristate "Select all generated MSM8974 panel drivers by default"
 
+config DRM_PANEL_AMAZON_KODIAK_URSA
+	tristate "Amazon KODIAK URSA"
+	default DRM_PANEL_MSM8974_GENERATED
+	select DRM_KMS_HELPER
+
 config DRM_PANEL_FAIRPHONE_FP2_OTM1902B
 	tristate "Fairphone FP2 OTM1902B"
 	default DRM_PANEL_MSM8974_GENERATED
