@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
-// Copyright (c) 2026 FIXME
+// Copyright (c) 2026 R0rt1z2 <roger@r0rt1z2.com>
 // Generated with linux-mdss-dsi-panel-driver-generator from vendor device tree:
-//   Copyright (c) 2013, The Linux Foundation. All rights reserved. (FIXME)
+//   Copyright (c) 2013, The Linux Foundation. All rights reserved.
 
 #include <linux/delay.h>
 #include <linux/gpio/consumer.h>
@@ -181,7 +181,7 @@ static void ursa_remove(struct mipi_dsi_device *dsi)
 }
 
 static const struct of_device_id ursa_of_match[] = {
-	{ .compatible = "amazon,kodiak-panel-ursa" }, // FIXME
+	{ .compatible = "amazon,kodiak-panel-ursa" },
 	{ /* sentinel */ }
 };
 MODULE_DEVICE_TABLE(of, ursa_of_match);
@@ -196,6 +196,6 @@ static struct mipi_dsi_driver ursa_driver = {
 };
 module_mipi_dsi_driver(ursa_driver);
 
-MODULE_AUTHOR("linux-mdss-dsi-panel-driver-generator <fix@me>"); // FIXME
-MODULE_DESCRIPTION("DRM driver for ursa 720p cmd mode dsi panel");
+MODULE_AUTHOR("R0rt1z2 <roger@r0rt1z2.com>");
+MODULE_DESCRIPTION("DRM driver for Amazon Fire Phone command mode DSI panel");
 MODULE_LICENSE("GPL");
